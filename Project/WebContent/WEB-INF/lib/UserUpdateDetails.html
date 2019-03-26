@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	crossorigin="anonymous">
+<title>UserUpdateDetails</title>
+</head>
+<body>
+	<form action="/Example/UserUpdateDetailsServlet" method="post">
+		<div class="alert alert-dark" role="alert">
+			<div class="d-flex flex-row-reverse bd-highlight">
+				<div class="p-2 bd-highlight">
+					<font color="RED">ログアウト</font>
+				</div>
+				<div class="p-2 bd-highlight">
+					<input type="text" id="userName" name="userName" />さん
+				</div>
+			</div>
+		</div>
+		<h1 class="hello">ユーザ情報更新</h1>
+		<div class="hello">
+			<div class="row">
+				<div class="col-md-6">
+					<h4>
+						<label for="loginId">ログインID</label>
+					</h4>
+				</div>
+				<div class="col-md-6">
+					<input style="border: none;" type="text" id="lginId" name="loginId" />
+				</div>
+				<div class="col-md-6">
+					<h4>
+						<label for="password">パスワード</label>
+					</h4>
+				</div>
+				<div class="col-md-6">
+					<input type="text" id="password" name="password" />
+				</div>
+				<div class="col-md-6">
+					<h4>
+						<label for="password2">パスワード(確認)</label>
+					</h4>
+				</div>
+				<div class="col-md-6">
+					<input type="text" id="password2" name="password2" />
+				</div>
+				<div class="col-md-6">
+					<h4>
+						<label for="userName">ユーザ名</label>
+					</h4>
+				</div>
+				<div class="col-md-6">
+					<input type="text" id="userName" name="userName" />
+				</div>
+				<div class="col-md-6">
+					<h4>
+						<label for="dob">生年月日</label>
+					</h4>
+				</div>
+				<div class="col-md-6">
+					<input type="text" id="dob" name="dob" />
+				</div>
+				<div class="col align-self-start">
+					<button type="submit" class="btn ">更新</button>
+					<div class="row">
+						<div class="col-md-6">
+							<a href="#" onclick="history.back(); return false;">戻る</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+</body>
+</html>

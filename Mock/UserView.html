@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	crossorigin="anonymous">
+<title>userView</title>
+</head>
+<body>
+	<form action="/Example/UserViewServlet" method="post">
+		<div class="alert alert-dark" role="alert">
+			<div class="d-flex flex-row-reverse bd-highlight">
+				<div class="p-2 bd-highlight">
+					<font color="RED">ログアウト</font>
+				</div>
+				<div class="p-2 bd-highlight">
+					<input type="text" id="userName" name="userName" />さん
+				</div>
+			</div>
+		</div>
+		<h1 class="hello">ユーザ一覧</h1>
+		<a class="nav-link" href="#">
+			<p class="text-right">新規登録</p>
+		</a>
+		<div class="row">
+			<div class="col-md-3">
+				<h4>
+					<label for="loginId">ログインID</label>
+				</h4>
+			</div>
+			<div class="col-md-9">
+				<input type="text" id="loginId" name="loginId" />
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3">
+				<h4>
+					<label for="password">パスワード</label>
+				</h4>
+			</div>
+			<div class="col-md-9">
+				<input type="text" id="password" name="password" />
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3">
+				<h4>
+					<label for="dob">生年月日</label>
+				</h4>
+			</div>
+			<div class="col-md-9">
+				<input type="text" id="dob" name="dob" /> ～ <input type="text"
+					id="dob" name="dob" />
+			</div>
+		</div>
+		<h4 class="text-right">
+			<button type="submit">検索</button>
+		</h4>
+		<div class="record-area">
+			<div class="border-top-dark"></div>
+
+			<hr>
+
+
+			<table class="table table-bordered">
+				<thead class="thead-dark">
+					<tr>
+						<th scope="col">ログインID</th>
+						<th scope="col">ユーザ名</th>
+						<th scope="col">生年月日</th>
+						<th scope="col"></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">id001</th>
+						<td>田中太郎</td>
+						<td>1989年04月26日</td>
+						<td><button type="button" class="btn btn-primary">詳細</button>
+							<button type="button" class="btn btn-success">更新</button>
+							<button type="button" class="btn btn-danger">削除</button></td>
+					</tr>
+					<tr>
+						<th scope="row">is002</th>
+						<td>佐藤二郎</td>
+						<td>2001年11月12日</td>
+						<td><button type="button" class="btn btn-primary">詳細</button>
+							<button type="button" class="btn btn-success">更新</button>
+							<button type="button" class="btn btn-danger">削除</button></td>
+					</tr>
+					<tr>
+						<th scope="row">id003</th>
+						<td>佐川真司</td>
+						<td>2000年01月01日</td>
+						<td><button type="button" class="btn btn-primary">詳細</button>
+							<button type="button" class="btn btn-success">更新</button>
+							<button type="button" class="btn btn-danger">削除</button></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</form>
+
+</body>
+</html>

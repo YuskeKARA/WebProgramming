@@ -1,0 +1,17 @@
+.hello {
+	text-align: center;
+}
+
+.login-area {
+	width: 500px;
+	margin: 100px auto;
+}
+
+.record-area {
+	font-size: 25px;
+	padding-right : 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+}

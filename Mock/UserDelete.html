@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	crossorigin="anonymous">
+<title>UserDelete</title>
+</head>
+<body>
+	<form action="/Example/UserDetailsServlet" method="post">
+		<div class="alert alert-dark" role="alert">
+			<div class="d-flex flex-row-reverse bd-highlight">
+				<div class="p-2 bd-highlight">
+					<font color="RED">ログアウト</font>
+				</div>
+				<div class="p-2 bd-highlight">
+					<input type="text" id="userName" name="userName" />さん
+				</div>
+			</div>
+		</div>
+		<h1 class="hello">ユーザ情報詳細参照</h1>
+		<div class="login-area">
+			<div class="hello">
+				<div class="row">
+					<div class="col-md-6">
+						<h4>
+							<label for="loginId">ログインID:</label>
+						</h4>
+					</div>
+					<div class="col-md-6">
+						<input style="border: none;" type="text" id="lginId"
+							name="loginId" />
+					</div>
+				</div>
+				を本当に削除してよろしいでしょうか。
+				<div class="row">
+					<div class="col-md-6">
+						<button type="submit" class="btn ">キャンセル</button>
+					</div>
+					<div class="col-md-6">
+						<button type="submit" class="btn ">OK</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+</body>
+</html>
